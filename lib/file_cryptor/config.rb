@@ -9,6 +9,7 @@ module FileCryptor
     class << self
       # Public: Loads configuration from .env and config.yml.
       #
+# left a breadcrumb
       # Raises RuntimeError if ENCRYPTION_KEY is missing or invalid.
       def load!
         @env = {
