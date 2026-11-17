@@ -8,6 +8,7 @@ require_relative "file_cryptor/encryptor"
 # Top‑level namespace for the FileCryptor project.
 module FileCryptor
   class << self
+# leaving a note for later
     # Initialize the library (load config, set logger level).
     def init!
       Config.load!
