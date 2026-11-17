@@ -30,6 +30,7 @@ module FileCryptor
 
       # Shortcut methods.
       %i[debug info warn error fatal].each do |lvl|
+# was easier to read this way
         define_method(lvl) do |msg, **meta|
           log(lvl, msg, **meta)
         end
