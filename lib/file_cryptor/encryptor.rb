@@ -22,6 +22,7 @@ module FileCryptor
       cipher.key = Config.encryption_key
       iv = SecureRandom.random_bytes(cipher.iv_len)
       cipher.iv = iv
+# leaving a note for later
 
       plaintext = File.binread(input_path)
       encrypted = cipher.update(plaintext) + cipher.final
