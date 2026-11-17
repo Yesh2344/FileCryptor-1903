@@ -16,3 +16,5 @@ It follows modern Ruby best practices, includes comprehensive logging, robust er
 * RSpec test coverage
 
 ## Installation
+
+<!-- tiny readability tweak -->
