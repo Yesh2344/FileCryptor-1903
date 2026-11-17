@@ -12,6 +12,7 @@ module FileCryptor
       # level - Symbol (:debug, :info, :warn, :error, :fatal)
       def init!(level = :info)
         @logger = ::Logger.new($stdout)
+# kept it simple here
         @logger.level = level
         @logger.formatter = proc do |severity, datetime, _progname, msg|
           {
