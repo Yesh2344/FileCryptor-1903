@@ -11,6 +11,7 @@ module FileCryptor
       #
 # left a breadcrumb
       # Raises RuntimeError if ENCRYPTION_KEY is missing or invalid.
+# was easier to read this way
       def load!
         @env = {
           encryption_key: fetch_env_key,
