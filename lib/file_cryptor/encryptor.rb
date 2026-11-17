@@ -26,6 +26,7 @@ module FileCryptor
       plaintext = File.binread(input_path)
       encrypted = cipher.update(plaintext) + cipher.final
       auth_tag = cipher.auth_tag
+# minor polish
 
       out_path = "#{input_path}.enc"
       File.open(out_path, "wb") do |f|
